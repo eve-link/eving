@@ -1,87 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="public" lang="et">
 <head>
-	<base href="<?=BASE_URL?>">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="shortcut icon" href="assets/ico/favicon.png">
-
-	<title><?=PROJECT_NAME?></title>
-
-	<!-- Bootstrap core CSS -->
-	<link href="assets/components/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Custom styles for this template -->
-	<style>
-		body {
-			min-height: 2000px !important;
-			padding-top: 70px;
-		}
-	</style>
-
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<![endif]-->
-
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,500' rel='stylesheet' type='text/css'>
+    <title>Eving</title>
 </head>
 
-<body>
+<body class="home-page">
+<div class="home-container">
 
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><?=PROJECT_NAME?></a>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li class="dropdown-header">Nav header</li>
-						<li><a href="#">Separated link</a></li>
-						<li><a href="#">One more separated link</a></li>
-					</ul>
-				</li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="../navbar/">Default</a></li>
-				<li><a href="../navbar-static-top/">Static top</a></li>
-				<li class="active"><a href="./">Fixed top</a></li>
-			</ul>
-		</div><!--/.nav-collapse -->
-	</div>
+    <aside class="sidebar">
+        <div class="sidebar-title">
+            <h1>Eving</h1>
+        </div>
+        <nav class="menu-nav">
+            <ul class="menu">
+                <li><a class="active">Avaleht</a></li>
+                <li><a href="shop.html">Pood</a></li>
+                <li><a href="content.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-lang-nav">
+            <ul class="menu">
+                <li><a class="active">in English</a></li>
+                <li><a href="#">Eesti keeles</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="name">Eving</div>
+            <p>Aadress</p>
+            <p>Tel nr</p>
+            <div class="mail">e-mail</div>
+        </div>
+    </aside>
+
+    <section class="home-content">
+        <div class="home-news-up-box">
+            <h1>Lorem ipsum <br> Lorem ipsum</h1>
+        </div>
+        <div class="home-news-middle-box">
+            <div class="home-middle-img-left">
+                <h2>Uued tooted</h2>
+            </div>
+            <div class="home-middle-img-right">
+                <h2>Lorem ipsum <br> Lorem ipsum</h2>
+            </div>
+        </div>
+        <div class="home-news-down-box">
+            <div class="home-small-img-1">
+                <h3 class="contact-us">Kontakt</h3><p class="address">Aadress <br>Tel nr</p>
+            </div>
+            <div class="home-small-img-2">
+                <h3 class="newsletter">Liitu uudiskirjaga</h3>
+            </div>
+            <div class="home-small-img-3">
+                <div class="icons">
+                    <a class="social-icon facebook" href="https://www.facebook.com/" target="_blank"></a>
+                    <a class="social-icon twitter" href="https://twitter.com/" target="_blank"></a>
+                    <a class="social-icon instagram" href="http://www.instagram.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
-
-<div class="container">
-
-	<!-- Main component for a primary marketing message or call to action -->
-	<? if( !file_exists("views/$controller/{$controller}_$action.php")) error_out('The view <i>views/'. $controller . '/' .  $controller . '_' . $action . '.php</i> does not exist. Create that file.');?>
-    <?  @require "views/$controller/{$controller}_$action.php"; ?>
-
-</div> <!-- /container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/components/jquery/1.10.2/jquery-1.10.2.min.js"></script>
-<script src="assets/components/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </body>
 </html>
