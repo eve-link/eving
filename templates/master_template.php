@@ -17,7 +17,7 @@
             <ul class="menu">
                 <li><a class="active" href="welcome">Avaleht</a></li>
                 <li><a href="products">Pood</a></li>
-                <li><a href="content.html">Kontakt</a></li>
+                <li><a href="contact">Kontakt</a></li>
             </ul>
         </nav>
         <nav class="menu-lang-nav">
