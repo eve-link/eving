@@ -2,7 +2,7 @@
     <div class="content-wrap">
         <div class="content-formatted cfx" >
             <h1>Kontakt</h1>
-            <p>Each company has its own needs on the basis of which we develop a tailor-made service package. Our strength is our well-trained and experienced staff, which is key to maintain international client relationships. We offer our clients a professional and personal service in all accountancy-related questions.<p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium et ex at ultricies. Pellentesque posuere fermentum mollis. Fusce sed imperdiet dui. Aenean luctus maximus dictum. Integer massa ex, vulputate eu suscipit sit amet, aliquam eget erat. Nulla aliquam, sem ac porta semper, mauris enim consequat felis, ac gravida justo felis in nisl. Mauris ullamcorper tempor neque vitae ullamcorper. Phasellus mauris mi, elementum malesuada egestas luctus, ornare quis augue. Proin pulvinar mauris id varius molestie. Suspendisse varius velit eu lacus ornare venenatis. Morbi diam sapien, facilisis eu elit vitae, pulvinar faucibus felis. Fusce dapibus erat sed luctus accumsan.<p>
         </div>
     </div>
 
@@ -11,12 +11,12 @@
             <div class="content-wrap">
                 <h1>Contact us</h1>
                 <form class="form">
-                    <p>Field of expertise (as of fall 2012):</p>
+                    <p>Pealkiri</p>
                     <label for="choose"></label>
                     <textarea id="choose" rows="2" cols="57" placeholder="choose a category"></textarea><br>
                 </form>
                 <div class="form">
-                    <p>Questions:</p>
+                    <p>Küsimused</p>
                     <label for="Questions"></label>
                     <textarea id="Questions" rows="7" cols="57" placeholder=""></textarea><br><br>
                 </div>
@@ -26,6 +26,6 @@
             </div>
         </div>
     </fieldset>
-    <p>Also our bigger accounting companies can give you consultancy in evaluation of financial positions and review your financial statements.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </section>
 </div>
