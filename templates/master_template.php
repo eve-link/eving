@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,500' rel='stylesheet' type='text/css'>
     <title>Eving</title>
+    <meta charset="UTF-8">
 </head>
 
 <body class="home-page">
@@ -11,7 +12,7 @@
 
     <aside class="sidebar">
         <div class="sidebar-title">
-            <h1>Eving</h1>
+            <a href="welcome"><h1>Eving</h1></a>
         </div>
         <nav class="menu-nav">
             <ul class="menu">
