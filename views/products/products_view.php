@@ -40,7 +40,7 @@
     <div class="container-fluid col-md-8">
         <div class="col-md-12 product-info">
 
-            <div class="product-title">Advanced Warfare</div>
+            <h2>Advanced Warfare</h2>
 
             <ul id="myTab" class="nav nav-tabs nav_tabs">
 

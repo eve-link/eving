@@ -7,6 +7,9 @@
     <link href="assets/components/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <title>Eving</title>
     <meta charset="UTF-8">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/components/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 
 <body class="home-page">
