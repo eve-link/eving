@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html class="public" lang="et">
 <head>
+    <base href="<?= BASE_URL ?>">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,500' rel='stylesheet' type='text/css'>
+    <link href="assets/components/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <title>Eving</title>
     <meta charset="UTF-8">
 </head>
@@ -16,8 +18,8 @@
         </div>
         <nav class="menu-nav">
             <ul class="menu">
-                <li><a class="active" href="welcome">Avaleht</a></li>
-                <li><a href="products">Pood</a></li>
+                <li><a  href="welcome">Avaleht</a></li>
+                <li <?=$controller=='products' ? 'class="active"': ''?>><a href="<?=BASE_URL?>">Posts</a></li>
                 <li><a href="contact">Kontakt</a></li>
             </ul>
         </nav>
