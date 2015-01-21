@@ -101,7 +101,7 @@
 
 
 
-                <form role="form" method="post" action="products/buy/2">
+                <form role="form" method="post" action="products/buy/<?= $product['product_id'] ?>">
                     <div class="form-group">
                         <label for="exampleInputName">Nimi *</label>
                         <input type="text" class="form-control" id="exampleInputName" placeholder="Sinu nimi..."

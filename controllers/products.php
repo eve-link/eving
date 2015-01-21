@@ -5,9 +5,17 @@ class products extends Controller
     function payments(){
         var_dump($_REQUEST);
     }
-    function buy()
+    function buy2()
     {
-        $customer=$_POST['data'];
+
+
+
+
+
+
+
+
+/*        $customer=$_POST['data'];
         $order_id=insert('order', $customer);
         $product_id = $this->params[0];
         $private_key = openssl_pkey_get_private("-----BEGIN RSA PRIVATE KEY-----
@@ -57,21 +65,21 @@ OZi5kSsBExGTi5nIUaUSQkhKpUR4anGOq2f0XRm5+Y+D9WifKu+2LdEwh4F9Uu69
             "VK_ENCODING" => "utf-8",
         );
         $data = str_pad (mb_strlen($fields["VK_SERVICE"], "UTF-8"), 3, "0", STR_PAD_LEFT) . $fields["VK_SERVICE"] .    /* 1011 */
-            str_pad (mb_strlen($fields["VK_VERSION"], "UTF-8"), 3, "0", STR_PAD_LEFT) . $fields["VK_VERSION"] .    /* 008 */
-            str_pad (mb_strlen($fields["VK_SND_ID"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_SND_ID"] .     /* uid517797 */
-            str_pad (mb_strlen($fields["VK_STAMP"], "UTF-8"),   3, "0", STR_PAD_LEFT) . $fields["VK_STAMP"] .      /* 12345 */
-            str_pad (mb_strlen($fields["VK_AMOUNT"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_AMOUNT"] .     /* 150 */
-            str_pad (mb_strlen($fields["VK_CURR"], "UTF-8"),    3, "0", STR_PAD_LEFT) . $fields["VK_CURR"] .       /* EUR */
-            str_pad (mb_strlen($fields["VK_ACC"], "UTF-8"),     3, "0", STR_PAD_LEFT) . $fields["VK_ACC"] .        /* EE871600161234567892 */
-            str_pad (mb_strlen($fields["VK_NAME"], "UTF-8"),    3, "0", STR_PAD_LEFT) . $fields["VK_NAME"] .       /* ÕIE MÄGER */
-            str_pad (mb_strlen($fields["VK_REF"], "UTF-8"),     3, "0", STR_PAD_LEFT) . $fields["VK_REF"] .        /* 1234561 */
-            str_pad (mb_strlen($fields["VK_MSG"], "UTF-8"),     3, "0", STR_PAD_LEFT) . $fields["VK_MSG"] .        /* Torso Tiger */
-            str_pad (mb_strlen($fields["VK_RETURN"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_RETURN"] .     /* https://pangalink.net/project/548571ca15ba66ed1dff4770?payment_action=success */
-            str_pad (mb_strlen($fields["VK_CANCEL"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_CANCEL"] .     /* https://pangalink.net/project/548571ca15ba66ed1dff4770?payment_action=cancel */
-            str_pad (mb_strlen($fields["VK_DATETIME"], "UTF-8"), 3, "0", STR_PAD_LEFT) . $fields["VK_DATETIME"];    /* 2014-12-10T12:05:15+0200 */
-        openssl_sign ($data, $signature, $private_key, OPENSSL_ALGO_SHA1);
+       /*     str_pad (mb_strlen($fields["VK_VERSION"], "UTF-8"), 3, "0", STR_PAD_LEFT) . $fields["VK_VERSION"] .    /* 008 */
+        /*    str_pad (mb_strlen($fields["VK_SND_ID"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_SND_ID"] .     /* uid517797 */
+        /*    str_pad (mb_strlen($fields["VK_STAMP"], "UTF-8"),   3, "0", STR_PAD_LEFT) . $fields["VK_STAMP"] .      /* 12345 */
+        /*    str_pad (mb_strlen($fields["VK_AMOUNT"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_AMOUNT"] .     /* 150 */
+        /*    str_pad (mb_strlen($fields["VK_CURR"], "UTF-8"),    3, "0", STR_PAD_LEFT) . $fields["VK_CURR"] .       /* EUR */
+        /*    str_pad (mb_strlen($fields["VK_ACC"], "UTF-8"),     3, "0", STR_PAD_LEFT) . $fields["VK_ACC"] .        /* EE871600161234567892 */
+        /*    str_pad (mb_strlen($fields["VK_NAME"], "UTF-8"),    3, "0", STR_PAD_LEFT) . $fields["VK_NAME"] .       /* ÕIE MÄGER */
+        /*    str_pad (mb_strlen($fields["VK_REF"], "UTF-8"),     3, "0", STR_PAD_LEFT) . $fields["VK_REF"] .        /* 1234561 */
+        /*    str_pad (mb_strlen($fields["VK_MSG"], "UTF-8"),     3, "0", STR_PAD_LEFT) . $fields["VK_MSG"] .        /* Torso Tiger */
+        /*    str_pad (mb_strlen($fields["VK_RETURN"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_RETURN"] .     /* https://pangalink.net/project/548571ca15ba66ed1dff4770?payment_action=success */
+        /*    str_pad (mb_strlen($fields["VK_CANCEL"], "UTF-8"),  3, "0", STR_PAD_LEFT) . $fields["VK_CANCEL"] .     /* https://pangalink.net/project/548571ca15ba66ed1dff4770?payment_action=cancel */
+        /*    str_pad (mb_strlen($fields["VK_DATETIME"], "UTF-8"), 3, "0", STR_PAD_LEFT) . $fields["VK_DATETIME"];    /* 2014-12-10T12:05:15+0200 */
+     /*   openssl_sign ($data, $signature, $private_key, OPENSSL_ALGO_SHA1);
         $fields["VK_MAC"] = base64_encode($signature);
-        $this->fields=$fields;
+        $this->fields=$fields; */
     }
     function index()
     {
@@ -83,7 +91,7 @@ OZi5kSsBExGTi5nIUaUSQkhKpUR4anGOq2f0XRm5+Y+D9WifKu+2LdEwh4F9Uu69
         $this->product = get_first("SELECT * FROM product WHERE product_id = $product_id");
         //$this->banks = json_decode(file_get_contents("https://pangalink.net/api/banks?access_token=bf4d65f132ebac0da832b0a9f0d19ccaf4a52369"))->data;
     }
-    function view_post()
+    function buy_post()
     {
         $data = $_POST['data'];
         $message = '<pre>' . print_r($data, 1) . '<pre>';
@@ -93,5 +101,9 @@ OZi5kSsBExGTi5nIUaUSQkhKpUR4anGOq2f0XRm5+Y+D9WifKu+2LdEwh4F9Uu69
         insert('order', $data);
         send_mail(EMAIL_EMAIL, EMAIL_NAME, $data['customer_email'], $data['customer_name'], "Uus sõnum veebilehelt", $message);
         echo "</pre>";
+    }
+
+    function buy() {
+
     }
 }
