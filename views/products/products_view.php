@@ -19,7 +19,7 @@
                 <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
                 <hr>
                 <div class="row">
-                    <div class="product-price col-md-9">$ 1234.00</div>
+                    <div class="product-price col-md-9">$<?= $product['product_price'] ?></div>
                     <div class="product-stock col-md-3">In Stock</div>
                 </div>
                 <hr>

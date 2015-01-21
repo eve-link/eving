@@ -352,9 +352,7 @@ textarea {
     display: inline-block;
 }
 
-.shop-img1 img,
-.shop-img2 img,
-.shop-img3 img {
+.shop-img1 img,{
     width: 256px;
     height: 257px;
     display: inline-block;
